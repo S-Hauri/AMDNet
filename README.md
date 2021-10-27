@@ -24,19 +24,19 @@ python train_AMDnet.py --material_file data/material_data.pkl --motif_file data/
 To test the pretrained network, run
 python evaluate_AMDnet.py  --material_file data/material_data.pkl --motif_file data/motif_graph.pkl --load_name save/new_model.hdf5
 
-Other parameters:
---material_file: dataset with material information
---motif_file: motif information for each material
---save_name: where to save the model
---predict: attribute to predict (band_gap or formation_energy_per_atom)
---epochs: maximum numbers of epochs
---patience: stop training if no improvement for number of epochs
---learning_rate: learning rate in training
---batch_size: batch size during training
---atom_cutoff: cutoff for atom distance that are considered connected in the graph
---motif_cutoff: cutoff for motif distance that are considered connected in the graph
---rbf_edge_dim_atom: dimension of RBF (radial basis function) for atoms
---rbf_edge_dim_motif: dimension of RBF (radial basis function) for motifs
+Other parameters: <br>
+--material_file: dataset with material information <br>
+--motif_file: motif information for each material <br>
+--save_name: where to save the model <br>
+--predict: attribute to predict (band_gap or formation_energy_per_atom) <br>
+--epochs: maximum numbers of epochs <br>
+--patience: stop training if no improvement for number of epochs <br>
+--learning_rate: learning rate in training <br>
+--batch_size: batch size during training <br>
+--atom_cutoff: cutoff for atom distance that are considered connected in the graph <br>
+--motif_cutoff: cutoff for motif distance that are considered connected in the graph <br>
+--rbf_edge_dim_atom: dimension of RBF (radial basis function) for atoms <br>
+--rbf_edge_dim_motif: dimension of RBF (radial basis function) for motifs <br>
 
 Due to version changes and limited compatibility to older versions of tensorflow and keras, we can not provide the models used to recreate the results in the publication. However, the provided AMD model performs better than the one used in the publication with the same train/validation/test split. We observe an MAE on the test set of 0.41 (an improvement over the published 0.44).
 
