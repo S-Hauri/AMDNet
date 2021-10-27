@@ -24,6 +24,20 @@ python train_AMDnet.py --material_file data/material_data.pkl --motif_file data/
 To test the pretrained network, run
 python evaluate_AMDnet.py  --material_file data/material_data.pkl --motif_file data/motif_graph.pkl --load_name save/new_model.hdf5
 
+Other parameters:
+--material_file: dataset with material information
+--motif_file: motif information for each material
+--save_name: where to save the model
+--predict: attribute to predict (band_gap or formation_energy_per_atom)
+--epochs: maximum numbers of epochs
+--patience: stop training if no improvement for number of epochs
+--learning_rate: learning rate in training
+--batch_size: batch size during training
+--atom_cutoff: cutoff for atom distance that are considered connected in the graph
+--motif_cutoff: cutoff for motif distance that are considered connected in the graph
+--rbf_edge_dim_atom: dimension of RBF (radial basis function) for atoms
+--rbf_edge_dim_motif: dimension of RBF (radial basis function) for motifs
+
 Due to version changes and limited compatibility to older versions of tensorflow and keras, we can not provide the models used to recreate the results in the publication. However, the provided AMD model performs better than the one used in the publication with the same train/validation/test split. We observe an MAE on the test set of 0.41 (an improvement over the published 0.44).
 
 In some cases, the training does not converge and stops after NaN. In this case, the learning rate is reduced and training proceeds from the best solution (this is the same as in the original source code from MEGNet). In cases where this stops the training early (after less than 200 epochs), we recommend reducing the learning rate and retrying from scratch.
