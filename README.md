@@ -1,7 +1,7 @@
 # AMDNet
 Code base for AMDNet described in https://doi.org/10.1126/sciadv.abf1754
  
-## Introduction
+## Description
 
 Incorporation of physical principles in a machine learning (ML) architecture is a fundamental step toward the continued development of artificial intelligence for inorganic materials. As inspired by the Pauling’s rule, we propose that structure motifs in inorganic crystals can serve as a central input to a machine learning framework. We demonstrated that the presence of structure motifs and their connections in a large set of crystalline compounds can be converted into unique vector representations using an unsupervised learning algorithm. To demonstrate the use of structure motif information, a motif-centric learning framework is created by combining motif information with the atom-based graph neural networks to form an atom-motif dual graph network (AMDNet), which is more accurate in predicting the electronic structures of metal oxides such as bandgaps. The work illustrates the route toward fundamental design of graph neural network learning architecture for complex materials by incorporating beyond-atom physical principles.
 
