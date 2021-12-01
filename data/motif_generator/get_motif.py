@@ -2,10 +2,17 @@ from motif_analyzer.feature import MotifFeature
 
 from os import listdir
 from os.path import isfile, join, basename
+import argparse
 
+parser = argparse.ArgumentParser(description='Train AMD-Net')
+parser.add_argument('--new_name',
+                    help='new file name to be created', type=str)
+parser.add_argument('--mpr_key',
+                    help='your personal key for pymatgen.ext.matproj.MPRester', type=str)
 
-new_name = '../new_motif_graph.pkl'
-mpr_key = 'wxhS4ntBiXkzN6My'
+args = parser.parse_args()
+new_name = args.new_name
+mpr_key = args.mpr_key
 
 
 cif_path = 'cif'
@@ -41,7 +48,7 @@ for cif_file in cif_files:
 
 
 
-from motifdata import MotifReader
+from motif_analyzer.motifdata import MotifReader
 import pickle as pkl
 import tqdm
 import re
@@ -69,9 +76,4 @@ if fail_count > 0:
     print('Could not create features for %i items'%fail_count)
 
 pkl.dump(pd.DataFrame(new_data), open(new_name, 'wb'))
-
-
-
-
-
 
