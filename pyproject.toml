@@ -15,14 +15,14 @@ dynamic = ["version", "description"]
 requires-python = ">=3.7,<3.9"
 
 dependencies = [
-    "keras==2.7.0",
-    "matminer==0.7.4",
-    "matplotlib==3.5.1",
-    "networkx==2.6.3",
+    "keras",
+    "matminer",
+    "matplotlib",
+    "networkx",
     "pandas",
     "pybel",
-    "pymatgen==2022.1.9",
-    "robocrys==0.2.7",
+    "pymatgen",
+    "robocrys",
     "scipy",
     "tensorflow",
     "tqdm",
