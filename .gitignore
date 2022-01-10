@@ -152,3 +152,10 @@ cython_debug/
 #.idea/
 
 scratch/**
+*.pyc
+amdnet/layers/__pycache__/__init__.cpython-38.pyc
+amdnet/layers/graph/__pycache__/__init__.cpython-38.pyc
+amdnet/layers/readout/__pycache__/__init__.cpython-38.pyc
+amdnet/layers/readout/__pycache__/linear.cpython-38.pyc
+amdnet/utils/__pycache__/__init__.cpython-38.pyc
+amdnet/utils/__pycache__/preprocessing.cpython-38.pyc
