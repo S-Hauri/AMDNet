@@ -9,7 +9,6 @@ pybel==0.15.4
 pymatgen==2022.1.9
 robocrys==0.2.7
 scipy==1.7.3
-tensorflow==2.7.0
 tqdm==4.62.3
 # protobuf==1.16.0 # install with `conda install protobuf` or `pip uninstall
 # protobuf; pip uninstall google; pip install google; pip install protobuf` #
