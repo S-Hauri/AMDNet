@@ -7,7 +7,7 @@ Incorporation of physical principles in a machine learning (ML) architecture is 
 
 Architecture:
 
-<img src="https://user-images.githubusercontent.com/51958221/139077101-4bd41f24-f209-4a51-8f7b-579cec81eb77.png" width="500">
+<img src="https://user-images.githubusercontent.com/51958221/139077101-4bd41f24-f209-4a51-8f7b-579cec81eb77.png" width="650">
 
 AMDNet architecture and materials property predictions.
 (A) Demonstration of the learning architecture of the proposed atom-motif dual graph network (AMDNet) for the effective learning of electronic structures and other material properties of inorganic crystalline materials. (B) Comparison of predicted and actual bandgaps [from density functional theory (DFT) calculations] and (C) comparison of predicted and actual formation energies (from DFT calculations) in the test dataset with 4515 compounds.
