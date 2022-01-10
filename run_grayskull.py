@@ -7,7 +7,7 @@ from souschef.recipe import Recipe
 import amdnet as module
 
 
-def convert_file(srcfile, trgfile=None):
+def convert_file(srcfile, trgfile="tmp"):
     if trgfile is None:
         trgfile = srcfile
     # get file encoding type
