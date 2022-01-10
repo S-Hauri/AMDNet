@@ -8,7 +8,7 @@ class InteractionLayer(GraphNetworkLayer):
     """
     The Continuous filter InteractionLayer in Schnet
 
-    Schütt et al. SchNet: A continuous-filter convolutional neural network for modeling quantum interactions
+    Schutt et al. SchNet: A continuous-filter convolutional neural network for modeling quantum interactions
 
     Args:
         activation (str): Default: None. The activation function used for each sub-neural network. Examples include
