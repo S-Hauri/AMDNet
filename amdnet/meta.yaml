@@ -1,5 +1,5 @@
 {% set name = "amdnet" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amdnet-{{ version }}.tar.gz
-  sha256: 2ef0108056e962894dbf910c7f7d0dbed4e53e0aa395e8e387f878d3e40ad5a6
+  sha256: a7d5be0354f50196378d1045e0dbfd7e7aff6c5264bb147990abe5083525cf20
 
 build:
   number: 0
@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://pypi.org/project/amdnet/
-  summary: Structure motif–centric learning framework for inorganic crystalline systems.
+  summary: Structure motif-centric learning framework for inorganic crystalline systems.
   license: BSD-3-Clause
   license_file: LICENSE
 
