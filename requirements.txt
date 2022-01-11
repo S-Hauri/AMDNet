@@ -1,16 +1,15 @@
-keras==2.7.0
-matminer==0.7.4
-matplotlib==3.5.1
-monty==2021.12.1
 networkx==2.6.3
-numpy==1.22.0
-pandas==1.3.5
-pybel==0.15.4
-pymatgen==2022.1.9
-robocrys==0.2.7
-scipy==1.7.3
-tensorflow==2.7.0
+pybel==0.13.2
 tqdm==4.62.3
-# protobuf==1.16.0 # install with `conda install protobuf` or `pip uninstall
-# protobuf; pip uninstall google; pip install google; pip install protobuf` #
-# https://github.com/tensorflow/tensorflow/issues/6341
+keras==2.6.0
+matplotlib==3.5.0
+pandas==1.3.5
+robocrys==0.2.7
+matminer==0.7.4
+scipy==1.7.3
+pymatgen==2022.1.9
+tensorflow==2.6.0
+monty==2021.12.1
+chardet==4.0.0
+model==0.6.0
+souschef==1.3.5
