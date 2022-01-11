@@ -1,5 +1,5 @@
 {% set name = "amdnet" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amdnet-{{ version }}.tar.gz
-  sha256: c425362e74483b0c77f7e61ae26db9898c0ae4913f29522937c44283e6ebc4ba
+  sha256: 19d07e857da0e7ef5b07502c86fb13fc7d31e77e0aed84f60c77c863a72da8dd
 
 build:
   number: 0
@@ -21,17 +21,17 @@ requirements:
   host:
     - pip
     - flit
-    - python >=3.6,<3.9
+    - python >=3.6,<3.10
   run:
-    - keras ==2.7.0
-    - matminer ==0.7.4
-    - matplotlib-base ==3.5.1
-    - networkx ==2.6.3
+    - keras
+    - matminer
+    - matplotlib-base
+    - networkx
     - pandas
     - pybel
-    - pymatgen ==2022.1.9
-    - python >=3.6,<3.9
-    - robocrys ==0.2.7
+    - pymatgen
+    - python >=3.6,<3.10
+    - robocrys
     - scipy
     - tensorflow
     - tqdm
@@ -40,9 +40,6 @@ test:
   imports:
     - amdnet
     - amdnet.layers
-  commands:
-    - pip check
-    - amdnet --help
   requires:
     - pip
 
