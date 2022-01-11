@@ -16,16 +16,16 @@ requires-python = ">=3.7,<3.9"
 
 dependencies = [
     "keras",
-    "matminer",
-    "matplotlib",
-    "networkx",
-    "pandas",
-    "pybel",
-    "pymatgen",
-    "robocrys",
-    "scipy",
-    "tensorflow",
-    "tqdm",
+    # "matminer",
+    # "matplotlib",
+    # "networkx",
+    # "pandas",
+    # "pybel",
+    # "pymatgen",
+    # "robocrys",
+    # "scipy",
+    # "tensorflow",
+    # "tqdm",
 ]
 
 [project.scripts]
