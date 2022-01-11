@@ -1,7 +1,8 @@
 """Touch up the conda recipe from grayskull using conda-souschef."""
 import os
 from os.path import join
-from chardet import detect
+
+# from chardet import detect
 from souschef.recipe import Recipe
 
 import amdnet as module
@@ -47,5 +48,7 @@ fpath = join(module.__name__, "meta.yaml")
 fpath2 = join("scratch", "meta.yaml")
 my_recipe = Recipe(load_file=fpath)
 my_recipe["requirements"]["host"].append("flit")
+del my_recipe["test"]["commands"]
+# my_recipe["about"]["license"][0] = "BSD"
 my_recipe.save(fpath)
 my_recipe.save(fpath2)
