@@ -12,7 +12,7 @@ readme = "README.md"
 classifiers = ["License :: OSI Approved :: BSD License"]
 dynamic = ["version", "description"]
 
-requires-python = ">=3.7,<=3.9"
+requires-python = ">3.6,<3.10"
 
 dependencies = [
     "keras",
@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 [project.scripts]
-amdnet = "train_AMDNet:main"
+amdnet = "amdnet.train_AMDNet:main"
 
 [project.urls]
 Home = "https://github.com/sparks-baird/amdnet"
