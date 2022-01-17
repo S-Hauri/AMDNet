@@ -1,0 +1,35 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "amdnet"
+authors = [
+    {name = "Sandro Hauri", email = "qiminyan@temple.edu"},
+    {name="Sterling Baird", email = "sterling.baird@utah.edu"},
+    ]
+readme = "README.md"
+classifiers = ["License :: OSI Approved :: BSD License"]
+dynamic = ["version", "description"]
+
+requires-python = ">3.6,<3.10"
+
+dependencies = [
+    "keras",
+    "matminer",
+    "matplotlib",
+    "networkx",
+    "pandas",
+    "pybel",
+    "pymatgen",
+    "robocrys",
+    "scipy",
+    "tensorflow",
+    "tqdm",
+]
+
+[project.scripts]
+amdnet = "amdnet.train_AMDNet:main"
+
+[project.urls]
+Home = "https://github.com/sparks-baird/amdnet"

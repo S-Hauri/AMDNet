@@ -1,0 +1,54 @@
+{% set name = "amdnet" %}
+{% set version = "1.0.10" %}
+
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amdnet-{{ version }}.tar.gz
+  sha256: 19d07e857da0e7ef5b07502c86fb13fc7d31e77e0aed84f60c77c863a72da8dd
+
+build:
+  number: 0
+  noarch: python
+  entry_points:
+    - amdnet = train_AMDNet:main
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - flit
+    - python >=3.6,<3.10
+  run:
+    - keras
+    - matminer
+    - matplotlib-base
+    - networkx
+    - pandas
+    - pybel
+    - pymatgen
+    - python >=3.6,<3.10
+    - robocrys
+    - scipy
+    - tensorflow
+    - tqdm
+
+test:
+  imports:
+    - amdnet
+    - amdnet.layers
+  requires:
+    - pip
+
+about:
+  home: https://pypi.org/project/amdnet/
+  summary: Structure motif-centric learning framework for inorganic crystalline systems.
+  license: BSD-3-Clause
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - sgbaird
